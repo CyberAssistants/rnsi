@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" href="/css/bootstrap.css">
+</head> 
+<body class="container-fluid">
+    
+<form class="row g-3 needs-validation" name="form" id="form" method="POST" action="/user" novalidate>
+    <div class="form-check">
+    <input class="form-check-input" name="is_integ" access="false" id="checkbox1" value="true" type="checkbox">
+    <label class="form-check-label" for="checkbox1">Осуществлять актуализацию справочников из ФНСИ</label>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Дни недели</label>
+        <div>
+            <div class="form-check">
+                <input class="form-check-input" access="false" id="control1" name="Mon" value="mon" type="checkbox">
+                <label class="form-check-label" for="control1">понедельник</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" access="false" id="control2" name="Tue" value="tue" type="checkbox">
+                <label class="form-check-label" for="control2">вторник</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" access="false" id="control3" name="Wed" value="wed" type="checkbox">
+                <label class="form-check-label" for="control3">среда</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" access="false" id="control4" name="Thu" value="thu" type="checkbox">
+                <label class="form-check-label" for="control4">четверг</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" access="false" id="control5" name="Fri" value="fri" type="checkbox">
+                <label class="form-check-label" for="control5">пятница</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" access="false" id="control6" name="Sat" value="sat" type="checkbox">
+                <label class="form-check-label" for="control6">суббота</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" access="false" id="control7" name="Sun" value="sun" type="checkbox">
+                <label class="form-check-label" for="control7">воскресение</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <label for="timeSt" class="form-label">Время начала<span>*</span></label>
+        <input type="time" class="form-control" name="timeSt" id="timeSt" required>
+    </div>
+    <div class="col-md-6">
+        <label for="timeEnd" class="form-label">Время окончания<span>*</span></label>
+        <input type="time" class="form-control" name="timeEnd" id="timeEnd" required>
+    </div>
+
+    <div class="col-md-6">
+        <label for="url" class="form-label">Адрес REST API ФНСИ<span>*</span></label>
+        <input type="url" class="form-control" name="url" access="false" id="url" required>
+    </div>
+    <div class="col-md-6">
+        <label class="form-label" for="token">Токен<span>*</span></label>
+        <input type="text" class="form-control" name="token" access="false" id="token" required>
+    </div>
+
+    <div class="col-auto">
+        <div class="col-12">
+        <button type="submit" class="btn btn-primary">Сохранить</button>
+    </div>
+    </div>
+</form>
+
+</body>
+</html>
