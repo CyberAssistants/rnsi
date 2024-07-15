@@ -2,7 +2,8 @@ const express = require('express');
 const fs = require('fs');
 
 const app = express();
-const port = 3000;
+const HOST = '127.0.0.1';
+const PORT = 8000;
 
 //const { userValidationRules, validate } = require("./models/form");
 
@@ -35,6 +36,16 @@ app.post('/user', (req,res)=>{
     res.send("ok!");
 });
 
-app.listen(port, () => {
+/*app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}/`);
+});*/
+
+const server = app.listen(PORT, HOST, () => {
+    console.log(`Server running at http://${HOST}:${PORT}/`);
+});
+
+app.on('error', (err) => {
+    if (err.code === 'EACCES') {
+        console.log(`No access to port: ${PORT}`);
+    }
 });
