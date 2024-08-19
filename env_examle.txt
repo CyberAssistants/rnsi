@@ -1,6 +1,15 @@
+//server/setting/.env
 IS_INTEGRATION=true
 WEEKDEY=""
 START_TIME=""
 END_TIME=""
 URL_REST_API_FNSI=""
 TOKEN=""
+
+//server/.env
+PORT=8000
+DB_NAME=rnsi
+DB_USER=postgres
+DB_PASSWORD=
+DB_HOST=localhost
+DB_PORT=5432

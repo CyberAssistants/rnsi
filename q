@@ -1,0 +1,41 @@
+* [33mcommit 5f76fd885ac492295dac46cf4ea76ab8168c0199[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature-config[m[33m, [m[1;31morigin/feature-config[m[33m)[m
+[31m|[m Author: Svetlana Peshkina <peschkinas@yandex.ru>
+[31m|[m Date:   Thu Aug 15 13:49:18 2024 +0300
+[31m|[m 
+[31m|[m     creating a database and API
+[31m|[m 
+* [33mcommit 5d9b01a3b94c14825c204a902cbf72d92748ef54[m
+[31m|[m Author: Svetlana Peshkina <peschkinas@yandex.ru>
+[31m|[m Date:   Mon Jul 15 11:57:28 2024 +0300
+[31m|[m 
+[31m|[m     starting the server
+[31m|[m 
+* [33mcommit 5f3f8e94b242f1c13fe779a11e673536f99161ad[m
+[31m|[m Author: Svetlana Peshkina <peschkinas@yandex.ru>
+[31m|[m Date:   Tue Jul 9 12:39:40 2024 +0300
+[31m|[m 
+[31m|[m     Creating a config file from user data
+[31m|[m 
+* [33mcommit 9fc09f13c86c82f7ac551236063ec2082b2e5dfc[m
+[31m|[m Author: Svetlana Peshkina <peschkinas@yandex.ru>
+[31m|[m Date:   Wed Jul 3 08:07:27 2024 +0300
+[31m|[m 
+[31m|[m     Creating config file
+[31m|[m 
+* [33mcommit 69bfa16b07f8be1a7bbba990c2a97208614e26dd[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+[31m|[m Author: MikhailOkhotnikov <71427332+MikhailOkhotnikov@users.noreply.github.com>
+[31m|[m Date:   Tue Jul 2 09:10:59 2024 +0300
+[31m|[m 
+[31m|[m     Add files via upload
+[31m|[m 
+* [33mcommit ace3870d7a20571758a4569fe5f0dd55aecbd20f[m
+[31m|[m Author: MikhailOkhotnikov <71427332+MikhailOkhotnikov@users.noreply.github.com>
+[31m|[m Date:   Tue Jul 2 09:07:51 2024 +0300
+[31m|[m 
+[31m|[m     Update README.md
+[31m|[m 
+* [33mcommit cbbc392c4b28b346d6f34ee5d63625f6a995cf9e[m
+  Author: MikhailOkhotnikov <71427332+MikhailOkhotnikov@users.noreply.github.com>
+  Date:   Tue Jul 2 09:03:27 2024 +0300
+  
+      Initial commit
