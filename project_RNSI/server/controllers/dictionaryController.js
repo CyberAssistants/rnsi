@@ -24,24 +24,30 @@ const getDatDictionary = async (data) => { //метод создания спр�
         if (temp.dataType == "DATETIME")
             dataList[name] = {type: "TIMESTAMP"}
         else if (temp.field == "id")
-            dataList[name] = {type: temp.dataType, primaryKey: true}
+            dataList["id_fnsi"] = {type: temp.dataType}
+        else if (temp.dataType == "INTEGER")
+            dataList[name] = {type: "VARCHAR"}
         else
             dataList[name] = {type: temp.dataType}
     }
-    console.log(dataList)
+    //console.log(dataList)
     let name = "oid" + data.oid.replace(/\./g, "_") + "_ver" + data.version.replace(/\./g, "_")
     let Dict = sequelize.define(name, dataList)
     await sequelize.sync()
+    if (Dict.count() == 0){
     httpRequest.getData(data.oid, async (result) => {
         let dictionary = JSON.parse(result)
         for (let data of dictionary.list){
             let dataList = {}
             for (let d of data){
-            dataList[d.column] = d.value
+                if (d.column == 'id')
+                    dataList['id_fnsi'] = d.value
+                else
+                    dataList[d.column] = d.value
             }
             await Dict.create(dataList);
         }
-    })
+    })}
 }
 let flad = 0
 
